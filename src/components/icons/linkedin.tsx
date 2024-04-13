@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Icons({ icon = 'github' }: { icon: "linkedin" | "github" }) {
   return (
