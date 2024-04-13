@@ -40,8 +40,7 @@ export const Home = () => {
           />
         </div>
         <p className="text-slate-900">
-          Hello, I'm Mwelwa Nkuta, A passionate Software Engineer with close to
-          half a decade of experience
+          Hello, I'm Mwelwa Nkuta, A passionate Software Engineer with 4 years of experience
         </p>
 
         <div className="flex items-center gap-9">
