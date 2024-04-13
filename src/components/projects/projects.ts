@@ -1,6 +1,3 @@
-import merlee from "../../assets/merlee.png";
-import pdfycode from "../../assets/pdfycode.gif";
-
 export const projects = [
   {
     title: "Merlee.js",
@@ -10,7 +7,9 @@ export const projects = [
     techStack: "JavaScript, Node Package Manager",
     link: "https://github.com/mwelwankuta/merlee.js",
     preview: "https://www.npmjs.com/package/merlee.js",
-    image: merlee,
+    image: "",
+    video: `
+    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/dziaRMibtTFMB7p135FX" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
   },
   {
     title: "PDFyCode",
@@ -20,7 +19,19 @@ export const projects = [
     link: "https://github.com/mwelwanKuta/pdfy-code",
     preview:
       "https://marketplace.visualstudio.com/items?itemName=mwelwankuta.pdfycode",
-    image: pdfycode,
+    image: "",
+    video: `<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/vnxpXfpVj1rMBSWGnK94" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
+  },
+  {
+    title: "FiveBay",
+    description: `"This Chrome extension helps users keep track of auction sales ending soon. It notifies you when auctions are about to end within the next 10 minutes, so you can place your bids in time. This prevents you from missing out on great deals and ensures that you stay on top of your bidding game. With this extension, you'll never miss the chance to snag that item you've been eyeing before the auction closes`,
+    techStack: "JavaScript, Ebay API, Node.js, Express.js",
+    link: "https://github.com/mwelwankuta/fivebay",
+    preview: "",
+    image: "",
+    video: `
+    <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/G7Jf7XhnCPsUeoZEJuZn" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+    `,
   },
   {
     title: "Noogle Search",
@@ -30,6 +41,7 @@ export const projects = [
     link: "https://github.com/mwelwankuta/noogle",
     preview: "",
     image: "",
+    video: `<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/GD3dPtMQiJrnenTesrAg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
   },
   {
     title: "Busy File Indicator",
@@ -37,14 +49,6 @@ export const projects = [
     techStack:
       "TypeScript, Visual Studio Code API, Node.js, Express.js, MongoDB",
     link: "https://github.com/mwelwankuta/busy-file-indicator",
-    preview: "",
-    image: "",
-  },
-  {
-    title: "FiveBay",
-    description: `"This Chrome extension helps users keep track of auction sales ending soon. It notifies you when auctions are about to end within the next 10 minutes, so you can place your bids in time. This prevents you from missing out on great deals and ensures that you stay on top of your bidding game. With this extension, you'll never miss the chance to snag that item you've been eyeing before the auction closes`,
-    techStack: "JavaScript, Ebay API, Node.js, Express.js",
-    link: "https://github.com/mwelwankuta/fivebay",
     preview: "",
     image: "",
   },

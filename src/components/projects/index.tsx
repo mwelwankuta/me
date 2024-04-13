@@ -29,7 +29,8 @@ const Project: React.FC<{
   link: string;
   preview: string;
   image: string;
-}> = ({ title, description, techStack, link, preview, image }) => {
+  video?: string;
+}> = ({ title, description, techStack, link, preview, image, video }) => {
   return (
     <div className="py-2 shadow-sm border rounded-md bg-white z-10">
       <div className="px-2 ">
@@ -42,6 +43,9 @@ const Project: React.FC<{
             src={image}
             className="my-4 aspect-video w-full object-contain"
           />
+        )}
+        {video && (
+          <div className="my-4 " dangerouslySetInnerHTML={{ __html: video }} />
         )}
       </div>
 
