@@ -42,9 +42,8 @@ export const projects = [
   },
   {
     title: "FiveBay",
-    description: `this is a Visual Studio Code extension allows developers to mark files as "busy" to prevent accidental edits and deletions minimizing the number merge conflicts due to making changes to a file that is busy at the moment and ensuring smoother collaboration among team members.`,
-    techStack:
-      "JavaScript, Ebay API, Node.js, Express.js",
+    description: `"This Chrome extension helps users keep track of auction sales ending soon. It notifies you when auctions are about to end within the next 10 minutes, so you can place your bids in time. This prevents you from missing out on great deals and ensures that you stay on top of your bidding game. With this extension, you'll never miss the chance to snag that item you've been eyeing before the auction closes`,
+    techStack: "JavaScript, Ebay API, Node.js, Express.js",
     link: "https://github.com/mwelwankuta/fivebay",
     preview: "",
     image: "",
