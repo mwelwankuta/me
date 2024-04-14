@@ -27,10 +27,10 @@ const Project: React.FC<{
   description: string;
   techStack: string;
   link: string;
-  preview: string;
+  previews: { link: string; title: string }[];
   image: string;
   video?: string;
-}> = ({ title, description, techStack, link, preview, image, video }) => {
+}> = ({ title, description, techStack, link, previews, image, video }) => {
   return (
     <div className="py-2 shadow-sm border rounded-md bg-white z-10">
       <div className="px-2 ">
@@ -53,15 +53,16 @@ const Project: React.FC<{
         <p className="text-slate-700 flex-1">{description}</p>
 
         <div className="flex items-center gap-2 flex-1  mt-2">
-          {preview && (
-            <a
-              href={preview}
-              target="_blank"
-              className="px-3 py-2 border-2 border-slate-200 rounded-md text-slate-600 bg-transparent"
-            >
-              Deployment
-            </a>
-          )}
+          {previews &&
+            previews.map(({ link, title }) => (
+              <a
+                href={link}
+                target="_blank"
+                className="px-3 py-2 border-2 border-slate-200 rounded-md text-slate-600 bg-transparent"
+              >
+                {title}
+              </a>
+            ))}
 
           {link && (
             <a
