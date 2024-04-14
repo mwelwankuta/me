@@ -8,16 +8,17 @@ import "./index.css";
 export default function App() {
   return (
     <div className="font-lato mt-10 max-w-7xl mx-auto">
-      <div className="h-screen bg-white">
+      <div >
         <CustomCursor />
         <NavBar />
 
-        <div className="mt-20">
+        <div className="mt-20 mb-52">
           <Home />
         </div>
       </div>
 
       <Projects />
+
       <Footer />
     </div>
   );

@@ -27,8 +27,8 @@ export const GithubLink = ({
 export const Home = () => {
   return (
     <div className="flex flex-row items-center justify-between container mx-auto px-5">
-      <div className="flex flex-col gap-4 max-w-md">
-        <div className="flex items-end">
+      <div className="flex flex-col  max-w-md">
+        <div className="flex items-end mb-4">
           <h1 className="font-black text-6xl lg:text-8xl text-teal-950">
             Software Engineer
           </h1>
@@ -39,12 +39,12 @@ export const Home = () => {
             className="rounded-full h-[70px] w-[70px] object-cover self-end lg:hidden"
           />
         </div>
-        <p className="text-slate-900">
+        <p className="text-slate-900 mb-4">
           Hello, I'm Mwelwa Nkuta, A passionate Software Engineer with 4 years
           of experience
         </p>
 
-        <div className="flex items-center gap-9">
+        <div className="flex items-center gap-9 mb-4">
           <GithubLink />
 
           <a href="https://linkedin.com/in/mwelwa" target="_blank">
@@ -55,8 +55,8 @@ export const Home = () => {
           </a>
         </div>
 
-        <h1 className="font-bold text-xl mt-6">Tech Stack</h1>
-        <p className="text-xs text-slate-600">
+        <h1 className="font-bold text-xl mt-6 ">Tech Stack</h1>
+        <p className="text-xs text-slate-600 mb-4">
           NOTE: click on logos to visit technology's website{" "}
           <span className="hidden lg:flex">or hover for the name</span>{" "}
         </p>

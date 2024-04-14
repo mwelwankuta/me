@@ -3,7 +3,7 @@ import { projects } from "./projects";
 
 export const Projects = () => {
   return (
-    <div className="container mx-auto px-5 mt-20">
+    <div className="container mx-auto px-5">
       <h1 className="font-bold text-2xl mt-6" id="projects">
         Projects
       </h1>
