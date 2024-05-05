@@ -49,14 +49,14 @@ export const projects = [
     previews: [],
     image: "",
     video: `<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/GD3dPtMQiJrnenTesrAg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
-  },
-  {
-    title: "Busy File Indicator",
-    description: `this is a Visual Studio Code extension allows developers to mark files as "busy" to prevent accidental edits and deletions minimizing the number merge conflicts due to making changes to a file that is busy at the moment and ensuring smoother collaboration among team members.`,
-    techStack:
-      "TypeScript, Visual Studio Code API, Node.js, Express.js, MongoDB",
-    link: "https://github.com/mwelwankuta/busy-file-indicator",
-    previews: [],
-    image: "",
-  },
+  }
+  // {
+  //   title: "Busy File Indicator",
+  //   description: `this is a Visual Studio Code extension allows developers to mark files as "busy" to prevent accidental edits and deletions minimizing the number merge conflicts due to making changes to a file that is busy at the moment and ensuring smoother collaboration among team members.`,
+  //   techStack:
+  //     "TypeScript, Visual Studio Code API, Node.js, Express.js, MongoDB",
+  //   link: "https://github.com/mwelwankuta/busy-file-indicator",
+  //   previews: [],
+  //   image: "",
+  // },
 ];
