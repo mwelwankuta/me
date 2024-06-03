@@ -49,14 +49,14 @@ export const projects = [
     previews: [],
     image: "",
     video: `<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/GD3dPtMQiJrnenTesrAg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
-  }
-  // {
-  //   title: "Busy File Indicator",
-  //   description: `this is a Visual Studio Code extension allows developers to mark files as "busy" to prevent accidental edits and deletions minimizing the number merge conflicts due to making changes to a file that is busy at the moment and ensuring smoother collaboration among team members.`,
-  //   techStack:
-  //     "TypeScript, Visual Studio Code API, Node.js, Express.js, MongoDB",
-  //   link: "https://github.com/mwelwankuta/busy-file-indicator",
-  //   previews: [],
-  //   image: "",
-  // },
+  },
+  {
+    title: "moodpick",
+    description: `MoodPick is a social media platform designed to help users capture and share their moments, express their feelings, and connect with friends. Whether you're sharing photos or videos, MoodPick makes it easy to keep your followers engaged and stay in touch with what's happening in their lives.`,
+    techStack: "Flutter, Dart, Google OAuth, Supabase",
+    link: "https://github.com/mwelwankuta/moodpick",
+    previews: [],
+    image: "",
+    video: `<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/sBJolwIPBO4osJuo4kAr" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
+  },
 ];
