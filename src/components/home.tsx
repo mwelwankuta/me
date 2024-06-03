@@ -34,7 +34,7 @@ export const Home = () => {
           </h1>
           <h1 className="font-black text-6xl lg:text-8xl hidden lg:flex">👋🏽</h1>
           <img
-            src="https://media.licdn.com/dms/image/D4D03AQGEcWcZCYbSKA/profile-displayphoto-shrink_200_200/0/1705765898593?e=1718236800&v=beta&t=2Ag099kdHQ2fkRD7SPf2kVyCNAKkjDIRBPDTz_C9xpg"
+            src="https://media.licdn.com/dms/image/D5603AQGzJ2JLlFhTgA/profile-displayphoto-shrink_800_800/0/1716413354755?e=1723075200&v=beta&t=3lSeRlXGK7qyI-E6UzcPkgT2h2N1P3gUIPeByoX0g74"
             alt="Picture of mwelwa"
             className="rounded-full h-[70px] w-[70px] object-cover self-end lg:hidden"
           />
