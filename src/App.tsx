@@ -29,7 +29,7 @@ export default function App() {
         }
       />
 
-      <Route path="ads" element={<div><h1 className="text-center text-3xl font-semibold">Hello Mr</h1></div>} />
+      <Route path="/ads" element={<div><h1 className="text-center text-3xl font-semibold">Hello Mr</h1></div>} />
     </Routes>
   );
 }
