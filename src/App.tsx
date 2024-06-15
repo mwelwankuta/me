@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path="*"
         element={
           <div className="font-lato mt-10 max-w-7xl mx-auto">
             <div>
@@ -28,8 +28,6 @@ export default function App() {
           </div>
         }
       />
-
-      <Route path="/ads" element={<div><h1 className="text-center text-3xl font-semibold">Hello Mr</h1></div>} />
     </Routes>
   );
 }

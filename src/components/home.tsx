@@ -11,6 +11,9 @@ import serverless from "../assets/serverless.png";
 import typescript from "../assets/typescript.png";
 import Icons from "./icons/linkedin";
 
+import { useEffect } from "react";
+import { generateProjectRedirectLink } from "./projects/projects";
+
 export const GithubLink = ({
   link = "https://github.com/mwelwankuta",
 }: {
@@ -25,6 +28,13 @@ export const GithubLink = ({
 );
 
 export const Home = () => {
+  const pathname = window.location.pathname;
+
+  useEffect(() => {
+    const project = generateProjectRedirectLink(pathname);
+    window.location.href = project.redirect;
+  }, [pathname]);
+
   return (
     <div className="flex flex-row  justify-between container mx-auto px-5">
       <div className="flex flex-col  max-w-md">

@@ -60,3 +60,27 @@ export const projects = [
     video: `<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://jumpshare.com/embed/sBJolwIPBO4osJuo4kAr" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`,
   },
 ];
+
+/**
+ * Generates a redirect link and title based on the provided pathname.
+ * @param pathname - The pathname to generate the redirect link and title from.
+ * @returns An object containing the redirect link and title.
+ */
+export const generateProjectRedirectLink = (pathname: string) => {
+  const project = projects.find(
+    (project) =>
+      project.title.toLowerCase().replace(/ /g, "-") === pathname.slice(1)
+  );
+
+  if (!project) {
+    return {
+      redirect: "/",
+      title: "home",
+    };
+  }
+
+  return {
+    redirect: project.link,
+    title: project.title.toLowerCase().replace(/ /g, "-"), // Convert title to lowercase and replace spaces with hyphens
+  };
+};
