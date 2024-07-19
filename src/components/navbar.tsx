@@ -3,7 +3,7 @@ export const NavBar = () => {
     <div className="flex items-center justify-between container mx-auto px-5">
       <div>
         <p className="text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-red-700  via-orange-500 to-teal-900  hover:animate-rainbow duration-200">
-          @Mwelwa Nkuta
+          @mwlnka
         </p>
       </div>
       <div>

@@ -13,6 +13,7 @@ import Icons from "./icons/linkedin";
 
 import { useEffect } from "react";
 import { generateProjectRedirectLink } from "./projects/projects";
+import { useParams } from "react-router-dom";
 
 export const GithubLink = ({
   link = "https://github.com/mwelwankuta",
@@ -28,30 +29,27 @@ export const GithubLink = ({
 );
 
 export const Home = () => {
-  const pathname = window.location.pathname;
+  const params = useParams();
+  const pathname = params.project ?? '';
 
   useEffect(() => {
-    const project = generateProjectRedirectLink(pathname);
-    window.location.href = project.redirect;
+    if (pathname.length) {
+      const project = generateProjectRedirectLink(pathname);
+      window.location.href = project.redirect;
+    }
   }, [pathname]);
 
   return (
-    <div className="flex flex-row  justify-between container mx-auto px-5">
-      <div className="flex flex-col  max-w-md">
+    <div className="flex flex-row container mx-auto px-5">
+      <div className="flex flex-col max-w-md">
         <div className="flex items-end mb-4">
           <h1 className="font-black text-6xl lg:text-8xl text-teal-950">
             Software Engineer
           </h1>
           <h1 className="font-black text-6xl lg:text-8xl hidden lg:flex">👋🏽</h1>
-          <img
-            src="https://media.licdn.com/dms/image/D5603AQGzJ2JLlFhTgA/profile-displayphoto-shrink_800_800/0/1716413354755?e=1723075200&v=beta&t=3lSeRlXGK7qyI-E6UzcPkgT2h2N1P3gUIPeByoX0g74"
-            alt="Picture of mwelwa"
-            className="rounded-full h-[70px] w-[70px] object-cover self-end md:hidden"
-          />
         </div>
         <p className="text-slate-900 mb-4">
-          Hello, I'm Mwelwa Nkuta, A passionate Software Engineer with 4 years
-          of experience
+          Hello, I'm <span className="font-black text-xl ">Mwelwa Nkuta</span>, A passionate Software Engineer with interest in building and scaling web applications and devloper tools.
         </p>
 
         <div className="flex items-center gap-9 mb-4">
@@ -159,19 +157,12 @@ export const Home = () => {
 
         <a
           href="#projects"
-          className="tracking-widest font-black text- mt-10 lg:block hidden text-center px-3 py-4 text-white letter shadow-xl shadow-orange-500 rounded-md bg-orange-600"
+          className="tracking-widest font-black text- mt-10 lg:block hidden text-center px-3 py-4 text-white letter shadow-xl rounded-md bg-orange-700"
         >
           Go to Projects
         </a>
       </div>
 
-      <div className="lg:flex ">
-        <img
-          src="https://media.licdn.com/dms/image/D5603AQGzJ2JLlFhTgA/profile-displayphoto-shrink_800_800/0/1716413354755?e=1723075200&v=beta&t=3lSeRlXGK7qyI-E6UzcPkgT2h2N1P3gUIPeByoX0g74"
-          alt="picture of Mwelwa"
-          className="rounded-full hidden md:block h-[150px] w-[150px]  lg:h-[300px] lg:w-[300px] object-cover "
-        />
-      </div>
     </div>
   );
 };
