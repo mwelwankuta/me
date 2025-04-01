@@ -63,11 +63,11 @@ export const Home = () => {
           </a>
         </div>
 
-        <h1 className="font-bold text-xl mt-6 ">Tech Stack</h1>
-        <p className="text-xs text-slate-600 mb-4">
+        <h1 className="font-bold text-xl mt-6 ">My daily tech stack</h1>
+        {/* <p className="text-xs text-slate-600 mb-4">
           NOTE: click on logos to visit technology's website{" "}
           <span className="hidden lg:flex">or hover for the name</span>{" "}
-        </p>
+        </p> */}
 
         <div className="flex flex-wrap items-center gap-4">
           <a href="https://react.dev/" title="React.js">
@@ -155,12 +155,12 @@ export const Home = () => {
           </a>
         </div>
 
-        <a
+        {/* <a
           href="#projects"
           className="tracking-widest font-black text- mt-10 lg:block hidden text-center px-3 py-4 text-white letter shadow-xl rounded-md bg-orange-700"
         >
           Go to Projects
-        </a>
+        </a> */}
       </div>
 
     </div>

@@ -3,7 +3,6 @@ import CustomCursor from "./components/cursor";
 import { Footer } from "./components/footer";
 import { Home } from "./components/home";
 import { NavBar } from "./components/navbar";
-import { Projects } from "./components/projects";
 import "./index.css";
 
 export default function App() {
@@ -22,7 +21,7 @@ export default function App() {
               </div>
             </div>
 
-            <Projects />
+            {/* <Projects /> */}
 
             <Footer />
           </div>
