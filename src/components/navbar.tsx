@@ -7,9 +7,9 @@ export const NavBar = () => {
         </p>
       </div>
       <div>
-        <a href="#projects" className="lg:hidden flex px-3 py-2 text-white shadow-xl shadow-orange-500 rounded-full bg-orange-600">
+        {/* <a href="#projects" className="lg:hidden flex px-3 py-2 text-white shadow-xl shadow-orange-500 rounded-full bg-orange-600">
           Go to Projects
-        </a>
+        </a> */}
       </div>
     </div>
   );
